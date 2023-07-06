@@ -1,0 +1,32 @@
+﻿
+@using MyCv.Models.Entity
+@model List<Sertifikalar>
+<section class="resume-section" id="awards">
+    <div class="resume-section-content">
+        <p style="font-size: 35px; position: sticky; top: 0; color: #325892; font-weight: bolder; margin-top: -80px; ">Sertifikalar</p>
+
+
+
+        @foreach (var item in Model)
+        {
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <p style="color:#0b0b0b;font-size: 18px; text-align: justify; font-weight: bolder ">@item.Aciklama</p>
+
+
+
+
+
+                    <div class="mb-0">@item.Tarih</div>
+
+                    <br />
+
+                </div>
+                <a style="color: #325892" href="@item.yeterlilik">Sertifika Yeterlilik</a>
+            </div>
+
+        }
+
+
+    </div>
+</section>

@@ -1,0 +1,27 @@
+﻿@using MyCv.Models.Entity
+@model List<Hobiler>
+<section class="resume-section" id="interests">
+    <div class="resume-section-content">
+        <p style="font-size: 35px; position: sticky; top: 0; color: #325892; font-weight: bolder; margin-top: -90px; ">Hobilerim</p>
+     
+
+        @foreach (var item in Model)
+        {
+            <div>
+
+                <p style="font-size: 15px; text-align: justify; font-weight: bold ">@item.Aciklama</p>
+                <p>
+                    @item.Aciklama1
+                    <br />
+                    @item.Aciklama2
+                    <br />
+                    @item.Aciklama3
+
+                    <br /> <br />
+                    <br />
+                <p style="font-size: 15px; text-align: justify; font-weight: bold ">@item.Aciklama4</p>
+
+            </div>
+        }
+    </div>
+</section>

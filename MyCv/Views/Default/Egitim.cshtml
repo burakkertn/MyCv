@@ -1,0 +1,31 @@
+﻿@using MyCv.Models.Entity
+@model List<Egitimler>
+<section class="resume-section" id="education">
+    <div class="resume-section-content">
+        <p style="font-size: 35px; position: sticky; top: 0; color: #325892; font-weight: bolder; margin-top: -80px; ">Eğitim Hayatım</p>
+
+
+        @foreach (var item in Model)
+        {
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class=" flex-grow-1">
+
+                    <div>
+
+                        <p style="color:#0b0b0b;font-size: 20px; text-align: justify; font-weight: bolder ">@item.Baslik</p>
+
+                        <span style="margin-left:920px;color: #325892">@item.Tarih</span>
+
+
+                        <p style="font-size: 17px; text-align: justify; font-weight:  lighter ">@item.AltBaslik</p>
+
+                        <p style="font-size: 14px; text-align: justify; font-weight: lighter ">@item.Altbaslik2</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        }
+    </div>
+</section>
